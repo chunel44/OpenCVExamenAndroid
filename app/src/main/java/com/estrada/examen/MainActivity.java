@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
               while ((line = bufferedReader.readLine()) != null) {
                   log = line;
               }
-              catchedValue = log.substring((log.indexOf(':') + 2), log.length());
+              catchedValue = log.substring((log.indexOf("SomeTag2:") + 10), log.length());
               System.out.println("Values: "+log);
               System.out.println("CatchedValue: " + catchedValue);
           }
